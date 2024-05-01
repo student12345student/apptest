@@ -1,0 +1,106 @@
+{
+  "fish": [
+    {
+      "name": "Trout",
+      "bait": "Worms",
+      "image_url": "https://example.com/trout.jpg"
+    },
+    {
+      "name": "Bass",
+      "bait": "Crankbaits",
+      "image_url": "https://example.com/bass.jpg"
+    },
+    {
+      "name": "Salmon",
+      "bait": "Spawn Sacks",
+      "image_url": "https://example.com/salmon.jpg"
+    },
+    {
+      "name": "Crappie",
+      "bait": "Minnows",
+      "image_url": "https://example.com/crappie.jpg"
+    },
+    {
+      "name": "Catfish",
+      "bait": "Stink Baits",
+      "image_url": "https://example.com/catfish.jpg"
+    },
+    {
+      "name": "Pike",
+      "bait": "Spoons",
+      "image_url": "https://example.com/pike.jpg"
+    },
+    {
+      "name": "Bluegill",
+      "bait": "Nightcrawlers",
+      "image_url": "https://example.com/bluegill.jpg"
+    },
+    {
+      "name": "Mackerel",
+      "bait": "Feathers",
+      "image_url": "https://example.com/mackerel.jpg"
+    },
+    {
+      "name": "Tuna",
+      "bait": "Squid",
+      "image_url": "https://example.com/tuna.jpg"
+    },
+    {
+      "name": "Marlin",
+      "bait": "Lures",
+      "image_url": "https://example.com/marlin.jpg"
+    }
+  ],
+    "bait": [
+      {
+        "name": "Worms",
+        "image_url": "https://example.com/worms.jpg",
+        "attracts": ["Trout", "Bluegill", "Bass"]
+      },
+      {
+        "name": "Crankbaits",
+        "image_url": "https://example.com/crankbaits.jpg",
+        "attracts": ["Bass", "Pike"]
+      },
+      {
+        "name": "Spawn Sacks",
+        "image_url": "https://example.com/spawn_sacks.jpg",
+        "attracts": ["Salmon"]
+      },
+      {
+        "name": "Minnows",
+        "image_url": "https://example.com/minnows.jpg",
+        "attracts": ["Crappie", "Bass"]
+      },
+      {
+        "name": "Stink Baits",
+        "image_url": "https://example.com/stink_baits.jpg",
+        "attracts": ["Catfish"]
+      },
+      {
+        "name": "Spoons",
+        "image_url": "https://example.com/spoons.jpg",
+        "attracts": ["Pike"]
+      },
+      {
+        "name": "Nightcrawlers",
+        "image_url": "https://example.com/nightcrawlers.jpg",
+        "attracts": ["Bluegill"]
+      },
+      {
+        "name": "Feathers",
+        "image_url": "https://example.com/feathers.jpg",
+        "attracts": ["Mackerel"]
+      },
+      {
+        "name": "Squid",
+        "image_url": "https://example.com/squid.jpg",
+        "attracts": ["Tuna"]
+      },
+      {
+        "name": "Lures",
+        "image_url": "https://example.com/lures.jpg",
+        "attracts": ["Marlin", "Tuna"]
+      }
+    ]
+}

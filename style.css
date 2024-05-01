@@ -1,0 +1,117 @@
+
+/* General styles */
+@import url('https://fonts.googleapis.com/css2?family=Sarpanch:wght@500&display=swap');
+body {
+    font-family: Sarpanch, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    border: black;  
+}
+
+/* Header navigation styles */
+nav {
+    display: flex;
+    justify-content: center; /* Change to space-between */
+    background-color: #ffffff;
+    padding: 10px;
+}
+
+
+ .headerLogo{
+    justify-content: center;
+} 
+
+
+nav a {
+    color: #351049;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 7px;
+    font-family: Sarpanch, sans-serif;
+    display: inline;
+    box-shadow: 100px solid #5CCBF5;
+    width: 200px;
+    height:60 px;
+}
+
+a {
+    border: 10px;
+}
+
+
+
+
+/* Image styles */
+second-div{
+    width: 100%; /* Adjust as needed */
+    height: 100%;
+}
+
+.image-football {
+    width: 100%; /* Adjust as needed */
+    height: auto;
+    /* margin-top:  */
+}
+
+
+.rounded-div{
+  width:200px;
+  height:150px;
+  border-radius:10px;
+  background-color:blue;
+  margin:20px;
+  padding:10px;
+  text-align:center;
+}
+
+#wrapper-div {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  /* border: 2px solid red; */
+  width: 70%;
+  margin-top: 8%;
+   
+}
+
+#wrapper-div2{
+     margin: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      justify-content: space-evenly;
+      /* border: 2px solid red; */
+      width: 70%;
+      margin-top: 8%;
+
+}
+p {
+  border-radius: 10px;
+  border: 3px solid #5CCBF5;
+  background-color: transparent;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-right: 2%;
+  padding-left: 2%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+
+}
+
+div {
+  font-size: 18px;
+  color: #351049;
+  font-family: Sarpanch, sans-serif;
+     display: flex;
+}
+
+body {
+  border: 21px solid #5CCBF5;
+}
+

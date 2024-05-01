@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar with Background Color and Outline</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@400;700&display=swap">
+  <style>
+    body {
+      font-family: 'Inknut Antiqua', serif;
+      background-color: #7CC6F2;
+      border: 2px solid black;
+      margin: 0;
+      padding: 0;
+      position: relative;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: transparent;
+      padding: 10px;
+      position: absolute;
+      top: 5px;
+      width: 87.5%;
+      z-index: 1;
+    }
+    p{
+      margin: 0;
+      font-size: 15px;
+      color: #BBBCBC;
+      text-shadow: 4px 4px 6px black;
+      margin-top: -15px;
+      margin-left: 38px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 34px;
+      color: #BBBCBC;
+      text-shadow: 4px 4px 6px black;
+      margin-top: 7px;
+      margin-left: 25px;
+    }
+    h2{
+      margin: 0;
+      font-size: 25px;
+      color: #D8D8D8;
+      text-shadow: 4px 4px 6px black;
+      margin-top: 30px;
+      margin-left: 35px;
+    }
+    h3{
+      margin: 0;
+      font-size: 25px;
+      color: #D8D8D8;
+      text-shadow: 4px 4px 6px black;
+      margin-top: 15px;
+      margin-left: 35px;
+    }
+
+    h27{
+      margin: 0;
+      font-size: 15px;
+      color: #7CC6F2;
+      text-underline-offset: 1px;
+      text-shadow: 4px 4px 6px black;
+      margin-top: 1%;
+      margin-left: 310px;
+    }
+    h28{
+      margin: 0;
+      font-size: 15px;
+      color: #7CC6F2;
+      text-underline-offset: 1px;
+      text-shadow: 4px 4px 6px black;
+      margin-top: 1%;
+      margin-left: 300px;
+    }
+    
+    h77{
+      margin: 0;
+      font-size: 15px;
+      color: #BBBCBC;
+      text-shadow: 4px 4px 6px black;
+      margin-top: 1%;
+      margin-left: 25px;
+    }
+
+    h420{
+    margin: 0;
+    font-size: 25px;
+    color: #D8D8D8;
+    text-shadow: 4px 4px 6px black;
+    margin-top: 1%;
+    margin-left: 205px;
+    }
+
+    nav {
+      margin-right: 10px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    nav li {
+      margin-right: 15px;
+      font-size: 18px;
+      color: #BBBCBC;
+      position: relative;
+    }
+
+    nav li a {
+      padding: 10px 15px;
+      text-decoration: none;
+      color: #BBBCBC;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    nav li a:hover {
+      background-color: #555;
+    }
+
+    nav li.signup a {
+      color: black;
+    }
+
+    .rectangle-behind {
+      position: absolute;
+      background-color: #BBBCBC;
+      width: 87.5%;
+      height: calc(100vh - 40px);
+      z-index: -2;
+      top: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+      border: 1px solid #000000;
+      box-sizing: border-box;
+      border-radius: 30px;
+    }
+
+    .rectangle {
+      position: absolute;
+      background-color: #1B1A1A;
+      width: 87.5%;
+      height: 755px;
+      z-index: -1;
+      top: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 30px;
+    }
+    
+    .today-rectangle {
+      position: absolute;
+      background-color: #272425; /* Choose your desired color */
+      width: 462px;
+      height: 526px; /* Set the desired height */
+      z-index: -3; /* Ensure it's behind the other rectangles */
+      top: 400px;
+      left: 265px;
+      transform: translate(-50%, -50%);
+      border-radius: 15px; /* Adjust the border-radius if needed */
+    }
+
+    .upcoming-rectangle{
+      position: absolute;
+      background-color: #272425; /* Choose your desired color */
+      width: 462px;
+      height: 659px; /* Set the desired height */
+      z-index: -3; /* Ensure it's behind the other rectangles */
+      top: 380px;
+      left: 825px;
+      transform: translate(-50%, -50%);
+      border-radius: 15px; /* Adjust the border-radius if needed */
+    }
+
+    .productivity-rectangle{
+      position: absolute;
+      background-color: #272425; /* Choose your desired color */
+      width: 354px;
+      height: 381px; /* Set the desired height */
+      z-index: -3; /* Ensure it's behind the other rectangles */
+      top: 240px;
+      left: 1325px;
+      transform: translate(-50%, -50%);
+      border-radius: 15px; /* Adjust the border-radius if needed */
+    }
+
+    .account-rectangle{
+      position: absolute;
+      background-color: #272425; /* Choose your desired color */
+      width: 355px;
+      height: 223px; /* Set the desired height */
+      z-index: -3; /* Ensure it's behind the other rectangles */
+      top: 600px;
+      left: 1325px;
+      transform: translate(-50%, -50%);
+      border-radius: 15px; /* Adjust the border-radius if needed */
+    }
+
+    .funny-button-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+    }
+
+    .funny-button-container h1 {
+      color: #BBBCBC;
+    }
+
+    .funny-button-container img {
+      border-radius: 45px;
+    }
+    .button-container {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 855px;
+      /* box-shadow: 0px 0px 10px #7CC6F2; */
+    }
+
+    .button-container button {
+      font-family: 'Inknut Antiqua', serif;
+      padding: 10px 20px;
+      background-color: #CDCDCD;
+      color: black;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      outline: none; /* Add this line to remove the outline */
+    }
+
+    .button-container button:hover {
+      background-color: #999;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="rectangle-behind">
+    <!-- Content for the new rectangle -->
+  </div>
+  
+  <div class="rectangle">
+    <header>
+      <h1>Hustl</h1>
+    </header>
+    <br>
+    <h2>Dashboard</h2>
+    
+    <div class="today-rectangle">
+      <h3>Today<h420>1/30/24</h420></h3>
+      <p>You've got ___ tasks today:</p>
+      
+      <h27>Add Tasks</h27>
+    </div>
+    
+    <div class="upcoming-rectangle">
+      <h3>Upcoming:</h3>
+      
+      <br>
+      
+      <h28>Add Reminders</h28>
+    </div>
+
+    <div class="productivity-rectangle">
+      <h3>Productivity</h3>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <h77>You've logged ___ minutes...</h77>
+    </div>
+
+    <div class="account-rectangle">
+      
+    </div>
+    
+  </div>
+  <div class="button-container">
+    <a href="Upcoming.html">
+      <button>Upcoming</button>
+    </a>
+    <button>Projects</button>
+    <button>Settings</button>
+  </div>
+  <br>
+  <script src="script.js"></script>
+</body>
+
+</html>
